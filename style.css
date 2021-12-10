@@ -2,12 +2,14 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    color: #ffffff  
+    color: #ffffff
+    /* Since most of the text is white on the page, this function was added to the universal selector and removed from further code*/
 }
 
 body {
     background-color: #d9dcd6;
     font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+    /* Since most of the font is 'Gill Sans' on the page, this function was added to the body section and removed from further code */
 }
 
 .header {
@@ -17,24 +19,34 @@ body {
     display: inline-block;
 }
 
-.header h1 {
+/* We do not need .header here so it was removed */
+h1 {
+    float:left;
     font-size: 48px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    /* The code defaults to 'Gill Sans', so we had to specify the change here */
 }
 
-.header h1 .seo {
+.seo {
     color: #d9dcd6;
 }
 
-.header div ul li {
-    margin-right: 20px;
-    margin-left: 25px;
+/* Combined the header and header-links sections to be more readable */
+.header-links {
     float: right;
+    margin-right: 20px;
+    padding:20px;
+}
+
+.header-links li {
+    display: inline-block;
+    margin-left: 25px;
     font-size: 20px;
     list-style-type: none;
 }
 
-.hero {
+/* The image url was moved to the HTML file and the class was renamed */
+.background-image {
     height: 800px;
     width: 100%;
     margin-top: 0px;
@@ -42,6 +54,8 @@ body {
     background-size: cover;
     background-position: center;
 }
+
+/* Removed the anchor section since there is no anchor tag in the code */
 
 p {
     font-size: 16px;
@@ -53,6 +67,7 @@ p {
     margin-left: 20px;
 }
 
+/* Multiple sections that are identical in design were combined into the class "skills" */
 .skills {
     background-color: #0072bb;
     padding: 40px;
@@ -122,6 +137,7 @@ h3 {
     text-align: center;
 }
 
+/* The footer color had to be specified since the default color is white in the universal selector */
 .footer h2 {
     font-size: 20px;
     color: black;
