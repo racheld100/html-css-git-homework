@@ -35,6 +35,12 @@ Our assignment was to change the html and css code to be more readable and organ
 * The "benefits" class was condensed when possible to make the code easier to read
 * The text color function was added to the footer to override the default color white and change it to black
 
+## Find the link for the new code here!
+https://github.com/racheld100/html-css-git-homework/blob/6c755fbb2dffe84dddf6136cbe864b2d1bd0d3b4/html-css-git-homework.html
+
+
+
+
 
 
 
